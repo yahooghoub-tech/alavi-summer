@@ -70,7 +70,7 @@ const story=[
     
     audio:"audio4.mp3",
     
-    speed:76
+    speed:82
     
     },
     

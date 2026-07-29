@@ -1274,10 +1274,7 @@ body{
     
     }
     
-    
-    
-    
-    
+
     .image-frame{
     
     
@@ -1898,7 +1895,7 @@ body{
     .welcome-box h1{
     
     
-        font-size:18px;
+        font-size:16px;
     
     
     
@@ -1911,7 +1908,7 @@ body{
     .welcome-box h2{
     
     
-        font-size:14px;
+        font-size:12px;
     
     
     
@@ -1924,7 +1921,7 @@ body{
     .welcome-box p{
     
     
-        font-size:12px;
+        font-size:10px;
     
     
     
@@ -1950,7 +1947,7 @@ body{
     .story-box h1{
     
     
-        font-size:16px;
+        font-size:14px;
     
     
     
@@ -1963,7 +1960,7 @@ body{
     #typing-text{
     
     
-        font-size:12px;
+        font-size:10px;
     
     
     

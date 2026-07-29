@@ -15,7 +15,7 @@ const story=[
     
     audio:"audio1.mp3",
     
-    speed:70
+    speed:73
     
     },
     
@@ -33,7 +33,7 @@ const story=[
     
     audio:"audio2.mp3",
     
-    speed:70
+    speed:83
     
     },
     
@@ -51,7 +51,7 @@ const story=[
     
     audio:"audio3.mp3",
     
-    speed:68
+    speed:74
     
     },
     
@@ -155,7 +155,7 @@ const story=[
     
     audio:"audio9.mp3",
     
-    speed:77
+    speed:73
     
     },
     {
@@ -167,7 +167,7 @@ const story=[
         image:"10.jpg",
         background:"10.jpg",
         audio:"audio10.mp3",
-        speed:77
+        speed:80
     },
     
 

@@ -1,149 +1,263 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>اردوی اختتامیه پایگاه تابستانی دبستان علوی</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+اردوی اختتامیه پایگاه تابستانی دبستان علوی
+</title>
+
 
 <link rel="stylesheet" href="style.css">
 
+
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+
 
 </head>
 
+
 <body>
 
+
+
+<!-- ======================= -->
 <!-- صفحه اول -->
+<!-- ======================= -->
+
 
 <section id="home-section" class="home-page">
 
+
+
 <div class="welcome-box">
 
-<img src="alavi-logo.png" class="school-logo" alt="آرم دبستان علوی">
+
+
+<img 
+src="alavi-logo.png"
+class="school-logo"
+alt="آرم دبستان علوی">
+
+
 
 <h1>
 اردوی اختتامیه پایگاه تابستانی
 </h1>
 
+
+
 <h2>
 دبستان علوی سردارجنگل
 </h2>
+
+
 
 <p>
 یک روز شاد، پر از بازی، رقابت و خاطره‌سازی
 </p>
 
 
-<button class="summer-btn" onclick="openSummer()">
+
+<button 
+class="summer-btn"
+onclick="openSummer()">
+
 ورود به پایگاه تابستانه
+
 </button>
+
 
 
 </div>
 
+
+
 </section>
-
-
-
+<!-- ======================= -->
 <!-- صفحه دوم -->
+<!-- ======================= -->
+
 
 <section id="summer-section" class="summer-page">
 
 
-<div class="main-container">
 
-
-<!-- بخش تصویر -->
-
-<div class="image-area">
-
-<div class="image-frame">
-
-<img id="booth-image" src="welcome.jpg" alt="غرفه پایگاه تابستانی">
-
-</div>
-
-</div>
-
-
-
-<!-- بخش داستان -->
-
-<div class="story-area">
-
-
-<div id="story-card" class="story-box">
-
-
-<h1>
-به اردوی اختتامیه پایگاه تابستانی خوش آمدید
-</h1>
-
-
-<div id="typing-text">
-
-برای شروع بازدید، روی دکمه شروع کلیک کنید.
-
-</div>
-
+    <!-- تصویر محو پس زمینه -->
+    
+    <div id="background-image"></div>
+    
+    
+    
+    
+    
+    <div class="main-container">
+    
+    
+    
+    
+    
+    <!-- ======================= -->
+    <!-- بخش تصویر اصلی -->
+    <!-- ======================= -->
+    
+    
+    <div class="image-area">
+    
+    
+    
+    <div class="image-frame">
+    
+    
+    
+    <img
+    
+    id="booth-image"
+    
+    src="1.jpg"
+    
+    alt="تصویر بخش پایگاه تابستانی">
+    
+    
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- ======================= -->
+    <!-- بخش داستان -->
+    <!-- ======================= -->
+    
+    
+    <div class="story-area">
+    
+    
+    
+    <div class="story-box" id="story-card">
+    
+    
+    
+    <h1>
+    
+    به اردوی اختتامیه پایگاه تابستانی خوش آمدید
+    
+    </h1>
+    
+    
+    
+    <div id="typing-text">
+    
+    برای شروع بازدید روی دکمه شروع کلیک کنید.
+    
+    </div>
+    <!-- ======================= -->
+<!-- دکمه های کنترل داستان -->
+<!-- ======================= -->
 
 
 <div class="control-buttons">
 
 
-<button id="prev-btn" onclick="previousStory()">
 
-◀ قبلی
+    <button 
+    id="prev-btn"
+    onclick="previousStory()">
+    
+    ◀ قبلی
+    
+    </button>
+    
+    
+    
+    
+    <button 
+    id="start-btn"
+    onclick="startStory()">
+    
+    شروع بازدید
+    
+    </button>
+    
+    
+    
+    
+    <button 
+    id="next-btn"
+    onclick="nextStory()">
+    
+    بعدی ▶
+    
+    </button>
+    
+    
+    
+    
+    <button 
+    id="reset-btn"
+    onclick="resetStory()">
+    
+    🔄 تازه سازی
+    
+    </button>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </div>
+    <!-- ======================= -->
+<!-- دکمه بازگشت -->
+<!-- ======================= -->
 
-</button>
 
-
-<button id="start-btn" onclick="startStory()">
-
-شروع بازدید
-
-</button>
-
-
-<button id="next-btn" onclick="nextStory()">
-
-بعدی ▶
-
-</button>
-
-
-<button id="reset-btn" onclick="resetStory()">
-
-🔄 تازه سازی
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-<a href="#" class="back-btn" onclick="backHome()">
+<a 
+href="#"
+class="back-btn"
+onclick="backHome()">
 
 بازگشت
 
 </a>
 
 
+
 </section>
 
 
 
+
+
+<!-- ======================= -->
+<!-- فایل جاوااسکریپت -->
+<!-- ======================= -->
+
+
 <script src="script.js"></script>
 
+
+
 </body>
+
+
 </html>

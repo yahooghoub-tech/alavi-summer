@@ -1,0 +1,688 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    body{
+    font-family:Vazirmatn,sans-serif;
+    overflow-x:hidden;
+    background:#061426;
+    }
+    
+    
+    .home-page,
+    .summer-page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:20px;
+    }
+    
+    
+    
+    /* صفحه اول */
+    
+    .home-page{
+    
+    background:
+    linear-gradient(
+    rgba(3,15,35,.75),
+    rgba(3,15,35,.85)
+    ),
+    url("background.jpg");
+    
+    background-size:cover;
+    background-position:center;
+    }
+    
+    
+    
+    .welcome-box{
+    
+    width:100%;
+    max-width:650px;
+    
+    padding:40px;
+    
+    text-align:center;
+    
+    color:white;
+    
+    background:
+    rgba(255,255,255,.12);
+    
+    border:
+    1px solid rgba(255,255,255,.35);
+    
+    border-radius:35px;
+    
+    backdrop-filter:blur(18px);
+    
+    box-shadow:
+    0 0 50px rgba(0,200,255,.35);
+    
+    animation:
+    boxEnter 1.5s ease;
+    
+    }
+    
+    
+    
+    .school-logo{
+    
+    width:140px;
+    height:140px;
+    
+    object-fit:contain;
+    
+    margin-bottom:20px;
+    
+    animation:
+    floatLogo 3s infinite ease-in-out;
+    
+    }
+    
+    
+    
+    .welcome-box h1{
+    
+    font-size:38px;
+    
+    font-weight:900;
+    
+    text-shadow:
+    0 0 20px #00d9ff;
+    
+    margin-bottom:15px;
+    
+    }
+    
+    
+    
+    .welcome-box h2{
+    
+    font-size:26px;
+    
+    margin-bottom:20px;
+    
+    }
+    
+    
+    
+    .welcome-box p{
+    
+    font-size:21px;
+    
+    line-height:2;
+    
+    margin-bottom:30px;
+    
+    }
+    
+    
+    
+    .summer-btn{
+    
+    border:none;
+    
+    padding:16px 45px;
+    
+    border-radius:50px;
+    
+    font-size:20px;
+    
+    font-family:inherit;
+    
+    color:white;
+    
+    cursor:pointer;
+    
+    background:
+    linear-gradient(45deg,#00c6ff,#0066ff);
+    
+    box-shadow:
+    0 0 30px #00c6ff;
+    
+    transition:.4s;
+    
+    }
+    
+    
+    
+    .summer-btn:hover{
+    
+    transform:scale(1.08);
+    
+    }
+    
+    
+    
+    /* صفحه دوم */
+    
+    
+    .summer-page{
+    
+    display:none;
+    
+    background:
+    linear-gradient(
+    135deg,
+    #061426,
+    #092b4c,
+    #07152e
+    );
+    
+    overflow:hidden;
+    
+    }
+    
+    
+    
+    .main-container{
+    
+    width:100%;
+    
+    max-width:1250px;
+    
+    display:flex;
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    gap:50px;
+    
+    }
+    
+    
+    
+    /* تصویر */
+    
+    
+    .image-area{
+    
+    width:45%;
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    }
+    
+    
+    
+    .image-frame{
+    
+    padding:12px;
+    
+    border-radius:35px;
+    
+    background:
+    rgba(255,255,255,.12);
+    
+    backdrop-filter:blur(15px);
+    
+    box-shadow:
+    0 0 40px rgba(0,200,255,.4);
+    
+    }
+    
+    
+    
+    .image-frame img{
+    
+    width:430px;
+    
+    height:330px;
+    
+    max-width:100%;
+    
+    object-fit:cover;
+    
+    border-radius:25px;
+    
+    transition:1s;
+    
+    animation:imageMove 1s;
+    
+    }
+    
+    
+    
+    /* داستان */
+    
+    
+    .story-area{
+    
+    width:55%;
+    
+    }
+    
+    
+    
+    .story-box{
+    
+    background:
+    rgba(255,255,255,.13);
+    
+    border:
+    1px solid rgba(255,255,255,.35);
+    
+    backdrop-filter:blur(20px);
+    
+    border-radius:35px;
+    
+    padding:35px;
+    
+    color:white;
+    
+    box-shadow:
+    0 0 50px rgba(0,200,255,.3);
+    
+    }
+    
+    
+    
+    .story-box.wave{
+    
+    animation:
+    waveCard .8s ease;
+    
+    }
+    
+    
+    
+    .story-box h1{
+    
+    font-size:30px;
+    
+    margin-bottom:25px;
+    
+    text-shadow:
+    0 0 15px #00d9ff;
+    
+    }
+    
+    
+    
+    #typing-text{
+    
+    font-size:21px;
+    
+    line-height:2.3;
+    
+    min-height:230px;
+    
+    text-align:right;
+    
+    }
+    
+    
+    
+    /* دکمه ها */
+    
+    
+    .control-buttons{
+    
+    display:flex;
+    
+    justify-content:center;
+    
+    flex-wrap:wrap;
+    
+    gap:12px;
+    
+    margin-top:30px;
+    
+    }
+    
+    
+    
+    .control-buttons button{
+    
+    border:none;
+    
+    padding:12px 25px;
+    
+    border-radius:40px;
+    
+    font-family:inherit;
+    
+    font-size:16px;
+    
+    cursor:pointer;
+    
+    color:white;
+    
+    background:
+    rgba(255,255,255,.15);
+    
+    border:
+    1px solid rgba(255,255,255,.3);
+    
+    backdrop-filter:blur(10px);
+    
+    transition:.4s;
+    
+    }
+    
+    
+    
+    .control-buttons button:hover{
+    
+    transform:translateY(-5px) scale(1.05);
+    
+    box-shadow:
+    0 0 20px #00c6ff;
+    
+    }
+    
+    
+    
+    #start-btn{
+    
+    background:#00c853;
+    
+    }
+    
+    
+    
+    #reset-btn{
+    
+    background:#ff9800;
+    
+    }
+    
+    
+    
+    /* بازگشت */
+    
+    
+    .back-btn{
+    
+    position:absolute;
+    
+    bottom:25px;
+    
+    right:25px;
+    
+    padding:12px 30px;
+    
+    border-radius:40px;
+    
+    color:white;
+    
+    text-decoration:none;
+    
+    background:
+    rgba(255,255,255,.15);
+    
+    border:
+    1px solid rgba(255,255,255,.3);
+    
+    backdrop-filter:blur(15px);
+    
+    }
+    
+    
+    
+    /* انیمیشن ها */
+    
+    
+    @keyframes floatLogo{
+    
+    0%,100%{
+    transform:translateY(0);
+    }
+    
+    50%{
+    transform:translateY(-15px);
+    }
+    
+    }
+    
+    
+    
+    @keyframes boxEnter{
+    
+    from{
+    
+    opacity:0;
+    
+    transform:
+    scale(.7)
+    translateY(80px);
+    
+    filter:blur(15px);
+    
+    }
+    
+    to{
+    
+    opacity:1;
+    
+    transform:
+    scale(1)
+    translateY(0);
+    
+    filter:blur(0);
+    
+    }
+    
+    }
+    
+    
+    
+    @keyframes imageMove{
+    
+    from{
+    
+    opacity:0;
+    
+    transform:
+    translateX(-80px);
+    
+    }
+    
+    to{
+    
+    opacity:1;
+    
+    transform:
+    translateX(0);
+    
+    }
+    
+    }
+    
+    
+    
+    @keyframes waveCard{
+    
+    0%{
+    
+    opacity:0;
+    
+    transform:
+    translateY(80px)
+    scale(.8)
+    rotateX(30deg);
+    
+    }
+    
+    50%{
+    
+    transform:
+    translateY(-15px)
+    scale(1.03);
+    
+    }
+    
+    100%{
+    
+    opacity:1;
+    
+    transform:
+    translateY(0)
+    scale(1);
+    
+    }
+    
+    }
+    
+    
+    
+    /* موبایل */
+    
+    
+    @media(max-width:900px){
+    
+    .main-container{
+    
+    flex-direction:column;
+    
+    gap:25px;
+    
+    }
+    
+    
+    .image-area,
+    .story-area{
+    
+    width:100%;
+    
+    }
+    
+    
+    .image-frame img{
+    
+    height:auto;
+    
+    aspect-ratio:16/9;
+    
+    }
+    
+    
+    .story-box{
+    
+    padding:25px;
+    
+    }
+    
+    
+    .story-box h1{
+    
+    font-size:24px;
+    
+    }
+    
+    
+    #typing-text{
+    
+    font-size:18px;
+    
+    }
+    
+    }
+    
+    
+    
+    @media(max-width:600px){
+    
+    
+    .home-page,
+    .summer-page{
+    
+    padding:12px;
+    
+    }
+    
+    
+    .welcome-box{
+    
+    padding:25px;
+    
+    }
+    
+    
+    .school-logo{
+    
+    width:90px;
+    
+    height:90px;
+    
+    }
+    
+    
+    .welcome-box h1{
+    
+    font-size:25px;
+    
+    }
+    
+    
+    .welcome-box h2{
+    
+    font-size:20px;
+    
+    }
+    
+    
+    .welcome-box p{
+    
+    font-size:16px;
+    
+    }
+    
+    
+    .summer-btn{
+    
+    width:100%;
+    
+    font-size:16px;
+    
+    }
+    
+    
+    .story-box{
+    
+    border-radius:25px;
+    
+    }
+    
+    
+    #typing-text{
+    
+    font-size:16px;
+    
+    line-height:2;
+    
+    min-height:170px;
+    
+    }
+    
+    
+    .control-buttons button{
+    
+    width:45%;
+    
+    font-size:14px;
+    
+    }
+    
+    
+    .back-btn{
+    
+    font-size:13px;
+    
+    bottom:15px;
+    
+    right:15px;
+    
+    }
+    
+    }

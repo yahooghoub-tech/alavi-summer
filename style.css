@@ -36,8 +36,6 @@ body{
 
 
 
-
-
 /* ========================= */
 /* صفحات اصلی */
 /* ========================= */
@@ -181,34 +179,21 @@ body{
 /* ========================= */
 /* لوگو */
 /* ========================= */
-
-
 .school-logo{
-
-
     width:130px;
-
-
     height:130px;
-
-
-
     object-fit:contain;
-
-
-
-    margin-bottom:20px;
-
-
-
-    animation:
-
-    floatLogo 3s infinite ease-in-out;
-
-
-
+    display:block;
+    margin:0 auto 20px auto;
+    animation:none !important;
+    transform:none !important;
 }
-
+.school-logo{
+    position:relative;
+    left:0 !important;
+    right:0 !important;
+    top:0 !important;
+}
 
 
 
@@ -1137,47 +1122,6 @@ body{
 }
 
 
-
-
-
-
-/* ========================= */
-/* انیمیشن لوگو */
-/* ========================= */
-
-
-@keyframes floatLogo{
-
-
-    0%,100%{
-
-
-        transform:translateY(0);
-
-
-
-    }
-
-
-
-    50%{
-
-
-        transform:translateY(-10px);
-
-
-
-    }
-
-
-
-}
-
-
-
-
-
-
 /* ========================= */
 /* ورود صفحه اول */
 /* ========================= */
@@ -2033,4 +1977,15 @@ body{
     
     
     }
-    
+    /* اصلاح نهایی لوگو */
+
+
+.welcome-box img.school-logo{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+}

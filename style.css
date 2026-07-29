@@ -4,100 +4,161 @@
     box-sizing:border-box;
     }
     
+    
     body{
+    
     font-family:Vazirmatn,sans-serif;
+    
     overflow-x:hidden;
+    
     background:#061426;
+    
     }
+    
     
     
     .home-page,
     .summer-page{
+    
     width:100%;
+    
     min-height:100vh;
+    
     display:flex;
+    
     align-items:center;
+    
     justify-content:center;
+    
     position:relative;
+    
     padding:20px;
+    
     }
     
     
     
     /* صفحه اول */
     
+    
     .home-page{
     
     background:
+    
     linear-gradient(
-    rgba(3,15,35,.75),
-    rgba(3,15,35,.85)
+    
+    rgba(3,15,35,.65),
+    
+    rgba(3,15,35,.82)
+    
     ),
+    
     url("background.jpg");
     
+    
     background-size:cover;
-    background-position:center;
+    
+    background-position:center center;
+    
+    background-repeat:no-repeat;
+    
+    
     }
     
+    
+    
+    /* کارت خوش آمد */
     
     
     .welcome-box{
     
     width:100%;
+    
     max-width:650px;
     
+    
     padding:40px;
+    
     
     text-align:center;
     
     color:white;
     
+    
     background:
+    
     rgba(255,255,255,.12);
     
+    
     border:
+    
     1px solid rgba(255,255,255,.35);
+    
     
     border-radius:35px;
     
-    backdrop-filter:blur(18px);
+    
+    backdrop-filter:blur(15px);
+    
     
     box-shadow:
-    0 0 50px rgba(0,200,255,.35);
+    
+    0 0 40px rgba(0,200,255,.35);
+    
     
     animation:
-    boxEnter 1.5s ease;
+    
+    boxEnter .8s ease;
+    
     
     }
     
+    
+    
+    /* لوگو */
     
     
     .school-logo{
     
     width:140px;
+    
     height:140px;
+    
     
     object-fit:contain;
     
+    
     margin-bottom:20px;
     
+    
     animation:
+    
     floatLogo 3s infinite ease-in-out;
+    
     
     }
     
     
     
+    /* تیترها */
+    
+    
     .welcome-box h1{
+    
     
     font-size:38px;
     
+    
     font-weight:900;
     
+    
     text-shadow:
+    
     0 0 20px #00d9ff;
     
+    
     margin-bottom:15px;
+    
     
     }
     
@@ -105,9 +166,12 @@
     
     .welcome-box h2{
     
+    
     font-size:26px;
     
+    
     margin-bottom:20px;
+    
     
     }
     
@@ -115,39 +179,64 @@
     
     .welcome-box p{
     
+    
     font-size:21px;
+    
     
     line-height:2;
     
+    
     margin-bottom:30px;
+    
     
     }
     
     
     
+    /* دکمه ورود */
+    
+    
     .summer-btn{
+    
     
     border:none;
     
+    
     padding:16px 45px;
+    
     
     border-radius:50px;
     
+    
     font-size:20px;
+    
     
     font-family:inherit;
     
+    
     color:white;
+    
     
     cursor:pointer;
     
+    
     background:
-    linear-gradient(45deg,#00c6ff,#0066ff);
+    
+    linear-gradient(
+    45deg,
+    #00c6ff,
+    #0066ff
+    );
+    
+    
     
     box-shadow:
-    0 0 30px #00c6ff;
     
-    transition:.4s;
+    0 0 25px #00c6ff;
+    
+    
+    transition:.3s;
+    
     
     }
     
@@ -155,20 +244,21 @@
     
     .summer-btn:hover{
     
-    transform:scale(1.08);
+    
+    transform:translateY(-5px);
+    
     
     }
-    
-    
-    
     /* صفحه دوم */
-    
-    
-    .summer-page{
-    
+
+
+.summer-page{
+
     display:none;
     
+    
     background:
+    
     linear-gradient(
     135deg,
     #061426,
@@ -176,25 +266,85 @@
     #07152e
     );
     
+    
     overflow:hidden;
     
     }
     
     
     
+    /* کانتینر اصلی */
+    
+    
     .main-container{
     
     width:100%;
     
+    
     max-width:1250px;
+    
     
     display:flex;
     
+    
     align-items:center;
+    
     
     justify-content:center;
     
-    gap:50px;
+    
+    gap:45px;
+    
+    
+    }
+    
+    
+    
+    /* بخش تصویر */
+    
+    
+    .image-area{
+    
+    width:45%;
+    
+    
+    display:flex;
+    
+    
+    justify-content:center;
+    
+    
+    }
+    
+    
+    
+    /* قاب تصویر */
+    
+    
+    .image-frame{
+    
+    
+    padding:12px;
+    
+    
+    border-radius:30px;
+    
+    
+    background:
+    
+    rgba(255,255,255,.12);
+    
+    
+    
+    backdrop-filter:blur(12px);
+    
+    
+    
+    box-shadow:
+    
+    0 0 35px rgba(0,200,255,.35);
+    
+    
     
     }
     
@@ -203,94 +353,109 @@
     /* تصویر */
     
     
-    .image-area{
-    
-    width:45%;
-    
-    display:flex;
-    
-    justify-content:center;
-    
-    }
-    
-    
-    
-    .image-frame{
-    
-    padding:12px;
-    
-    border-radius:35px;
-    
-    background:
-    rgba(255,255,255,.12);
-    
-    backdrop-filter:blur(15px);
-    
-    box-shadow:
-    0 0 40px rgba(0,200,255,.4);
-    
-    }
-    
-    
-    
     .image-frame img{
+    
     
     width:430px;
     
-    height:330px;
     
     max-width:100%;
     
+    
+    height:auto;
+    
+    
+    aspect-ratio:4/3;
+    
+    
+    
     object-fit:cover;
     
-    border-radius:25px;
     
-    transition:1s;
     
-    animation:imageMove 1s;
+    border-radius:22px;
+    
+    
+    
+    transition:.6s;
+    
+    
+    
+    animation:
+    
+    imageMove .6s ease;
+    
     
     }
     
     
     
-    /* داستان */
+    /* بخش داستان */
     
     
     .story-area{
     
+    
     width:55%;
+    
     
     }
     
+    
+    
+    /* کارت متن */
     
     
     .story-box{
     
+    
     background:
+    
     rgba(255,255,255,.13);
     
+    
+    
     border:
-    1px solid rgba(255,255,255,.35);
     
-    backdrop-filter:blur(20px);
+    1px solid rgba(255,255,255,.3);
     
-    border-radius:35px;
+    
+    
+    backdrop-filter:blur(15px);
+    
+    
+    
+    border-radius:30px;
+    
+    
     
     padding:35px;
     
+    
+    
     color:white;
     
+    
+    
     box-shadow:
-    0 0 50px rgba(0,200,255,.3);
+    
+    0 0 40px rgba(0,200,255,.25);
+    
     
     }
     
     
     
+    /* افکت ورود سبک */
+    
+    
     .story-box.wave{
     
+    
     animation:
-    waveCard .8s ease;
+    
+    simpleEnter .5s ease;
+    
     
     }
     
@@ -298,26 +463,42 @@
     
     .story-box h1{
     
+    
     font-size:30px;
+    
     
     margin-bottom:25px;
     
+    
     text-shadow:
+    
     0 0 15px #00d9ff;
+    
     
     }
     
     
     
+    /* متن داستان */
+    
+    
     #typing-text{
+    
     
     font-size:21px;
     
+    
     line-height:2.3;
+    
     
     min-height:230px;
     
+    
     text-align:right;
+    
+    
+    white-space:normal;
+    
     
     }
     
@@ -328,15 +509,24 @@
     
     .control-buttons{
     
+    
     display:flex;
+    
     
     justify-content:center;
     
+    
+    align-items:center;
+    
+    
     flex-wrap:wrap;
+    
     
     gap:12px;
     
+    
     margin-top:30px;
+    
     
     }
     
@@ -344,29 +534,47 @@
     
     .control-buttons button{
     
+    
     border:none;
+    
     
     padding:12px 25px;
     
+    
     border-radius:40px;
+    
     
     font-family:inherit;
     
+    
     font-size:16px;
+    
     
     cursor:pointer;
     
+    
     color:white;
     
+    
+    
     background:
+    
     rgba(255,255,255,.15);
     
+    
+    
     border:
+    
     1px solid rgba(255,255,255,.3);
+    
+    
     
     backdrop-filter:blur(10px);
     
-    transition:.4s;
+    
+    
+    transition:.3s;
+    
     
     }
     
@@ -374,10 +582,14 @@
     
     .control-buttons button:hover{
     
-    transform:translateY(-5px) scale(1.05);
+    
+    transform:translateY(-4px);
+    
     
     box-shadow:
-    0 0 20px #00c6ff;
+    
+    0 0 18px #00c6ff;
+    
     
     }
     
@@ -385,7 +597,9 @@
     
     #start-btn{
     
+    
     background:#00c853;
+    
     
     }
     
@@ -393,296 +607,853 @@
     
     #reset-btn{
     
+    
     background:#ff9800;
+    
     
     }
     
     
     
-    /* بازگشت */
+    /* دکمه بازگشت */
     
     
     .back-btn{
     
+    
     position:absolute;
+    
     
     bottom:25px;
     
+    
     right:25px;
+    
+    
     
     padding:12px 30px;
     
+    
+    
     border-radius:40px;
+    
+    
     
     color:white;
     
+    
+    
     text-decoration:none;
     
+    
+    
     background:
+    
     rgba(255,255,255,.15);
     
+    
+    
     border:
+    
     1px solid rgba(255,255,255,.3);
     
-    backdrop-filter:blur(15px);
+    
+    
+    backdrop-filter:blur(12px);
+    
     
     }
-    
-    
-    
     /* انیمیشن ها */
-    
-    
-    @keyframes floatLogo{
-    
+
+
+@keyframes floatLogo{
+
     0%,100%{
+    
     transform:translateY(0);
+    
     }
     
     50%{
-    transform:translateY(-15px);
-    }
+    
+    transform:translateY(-10px);
     
     }
     
+    }
+    
+    
+    
+    /* ورود سبک صفحه اول */
     
     
     @keyframes boxEnter{
     
+    
     from{
+    
     
     opacity:0;
     
-    transform:
-    scale(.7)
-    translateY(80px);
     
-    filter:blur(15px);
+    transform:translateY(40px);
+    
     
     }
+    
     
     to{
     
+    
     opacity:1;
     
-    transform:
-    scale(1)
-    translateY(0);
     
-    filter:blur(0);
+    transform:translateY(0);
+    
     
     }
     
+    
     }
     
+    
+    
+    /* ورود کارت داستان */
+    
+    
+    @keyframes simpleEnter{
+    
+    
+    from{
+    
+    
+    opacity:0;
+    
+    
+    transform:translateY(25px);
+    
+    
+    }
+    
+    
+    to{
+    
+    
+    opacity:1;
+    
+    
+    transform:translateY(0);
+    
+    
+    }
+    
+    
+    }
+    
+    
+    
+    /* ورود تصویر */
     
     
     @keyframes imageMove{
     
+    
     from{
+    
     
     opacity:0;
     
-    transform:
-    translateX(-80px);
+    
+    transform:translateX(-40px);
+    
     
     }
+    
     
     to{
     
-    opacity:1;
-    
-    transform:
-    translateX(0);
-    
-    }
-    
-    }
-    
-    
-    
-    @keyframes waveCard{
-    
-    0%{
-    
-    opacity:0;
-    
-    transform:
-    translateY(80px)
-    scale(.8)
-    rotateX(30deg);
-    
-    }
-    
-    50%{
-    
-    transform:
-    translateY(-15px)
-    scale(1.03);
-    
-    }
-    
-    100%{
     
     opacity:1;
     
-    transform:
-    translateY(0)
-    scale(1);
+    
+    transform:translateX(0);
+    
     
     }
     
+    
     }
     
     
     
-    /* موبایل */
+    /* ===================== */
+    /* تبلت و موبایل */
+    /* ===================== */
     
     
     @media(max-width:900px){
     
-    .main-container{
-    
-    flex-direction:column;
-    
-    gap:25px;
-    
-    }
-    
-    
-    .image-area,
-    .story-area{
-    
-    width:100%;
-    
-    }
-    
-    
-    .image-frame img{
-    
-    height:auto;
-    
-    aspect-ratio:16/9;
-    
-    }
-    
-    
-    .story-box{
-    
-    padding:25px;
-    
-    }
-    
-    
-    .story-box h1{
-    
-    font-size:24px;
-    
-    }
-    
-    
-    #typing-text{
-    
-    font-size:18px;
-    
-    }
-    
-    }
-    
-    
-    
-    @media(max-width:600px){
     
     
     .home-page,
     .summer-page{
     
-    padding:12px;
+    padding:15px;
     
     }
     
     
-    .welcome-box{
     
-    padding:25px;
+    
+    .main-container{
+    
+    
+    flex-direction:column;
+    
+    
+    gap:25px;
+    
     
     }
     
     
-    .school-logo{
-    
-    width:90px;
-    
-    height:90px;
-    
-    }
     
     
-    .welcome-box h1{
+    .image-area,
+    .story-area{
     
-    font-size:25px;
-    
-    }
-    
-    
-    .welcome-box h2{
-    
-    font-size:20px;
-    
-    }
-    
-    
-    .welcome-box p{
-    
-    font-size:16px;
-    
-    }
-    
-    
-    .summer-btn{
     
     width:100%;
     
-    font-size:16px;
     
     }
+    
+    
+    
+    .image-frame{
+    
+    
+    width:100%;
+    
+    
+    }
+    
+    
+    
+    .image-frame img{
+    
+    
+    width:100%;
+    
+    
+    aspect-ratio:16/10;
+    
+    
+    }
+    
     
     
     .story-box{
     
-    border-radius:25px;
+    
+    padding:25px;
+    
     
     }
+    
+    
+    
+    .story-box h1{
+    
+    
+    font-size:24px;
+    
+    
+    }
+    
     
     
     #typing-text{
     
-    font-size:16px;
+    
+    font-size:18px;
+    
     
     line-height:2;
     
-    min-height:170px;
+    
+    min-height:190px;
+    
     
     }
+    
+    
+    
+    
+    .control-buttons{
+    
+    
+    margin-top:20px;
+    
+    
+    }
+    
+    
+    
+    }
+    
+    
+    
+    /* ===================== */
+    /* موبایل */
+    /* ===================== */
+    
+    
+    @media(max-width:600px){
+    
+    
+    
+    .home-page,
+    .summer-page{
+    
+    
+    padding:10px;
+    
+    
+    }
+    
+    
+    
+    /* صفحه اول */
+    
+    
+    .welcome-box{
+    
+    
+    padding:25px 18px;
+    
+    
+    border-radius:25px;
+    
+    
+    }
+    
+    
+    
+    .school-logo{
+    
+    
+    width:90px;
+    
+    
+    height:90px;
+    
+    
+    }
+    
+    
+    
+    .welcome-box h1{
+    
+    
+    font-size:25px;
+    
+    
+    line-height:1.7;
+    
+    
+    }
+    
+    
+    
+    .welcome-box h2{
+    
+    
+    font-size:20px;
+    
+    
+    }
+    
+    
+    
+    .welcome-box p{
+    
+    
+    font-size:16px;
+    
+    
+    line-height:1.9;
+    
+    
+    }
+    
+    
+    
+    .summer-btn{
+    
+    
+    width:100%;
+    
+    
+    padding:14px;
+    
+    
+    font-size:16px;
+    
+    
+    }
+    
+    
+    
+    /* صفحه دوم */
+    
+    
+    .main-container{
+    
+    
+    gap:18px;
+    
+    
+    }
+    
+    
+    
+    .image-frame{
+    
+    
+    padding:8px;
+    
+    
+    border-radius:22px;
+    
+    
+    }
+    
+    
+    
+    .image-frame img{
+    
+    
+    border-radius:15px;
+    
+    
+    }
+    
+    
+    
+    .story-box{
+    
+    
+    padding:18px;
+    
+    
+    border-radius:22px;
+    
+    
+    }
+    
+    
+    
+    .story-box h1{
+    
+    
+    font-size:20px;
+    
+    
+    text-align:center;
+    
+    
+    }
+    
+    
+    
+    #typing-text{
+    
+    
+    font-size:16px;
+    
+    
+    line-height:2;
+    
+    
+    min-height:160px;
+    
+    
+    }
+    
+    
+    
+    .control-buttons{
+    
+    
+    gap:8px;
+    
+    
+    }
+    
     
     
     .control-buttons button{
     
+    
     width:45%;
+    
+    
+    padding:10px;
+    
     
     font-size:14px;
     
+    
     }
+    
     
     
     .back-btn{
     
+    
+    bottom:12px;
+    
+    
+    right:12px;
+    
+    
+    padding:10px 20px;
+    
+    
     font-size:13px;
     
-    bottom:15px;
-    
-    right:15px;
     
     }
+    
+    
+    }
+    /* ===================== */
+/* موبایل های کوچک */
+/* ===================== */
+
+
+@media(max-width:380px){
+
+
+
+    .home-page,
+    .summer-page{
+    
+    
+    padding:8px;
+    
+    
+    }
+    
+    
+    
+    /* صفحه اول */
+    
+    
+    .welcome-box{
+    
+    
+    padding:20px 12px;
+    
+    
+    border-radius:20px;
+    
+    
+    }
+    
+    
+    
+    .school-logo{
+    
+    
+    width:75px;
+    
+    
+    height:75px;
+    
+    
+    margin-bottom:12px;
+    
+    
+    }
+    
+    
+    
+    .welcome-box h1{
+    
+    
+    font-size:21px;
+    
+    
+    line-height:1.7;
+    
+    
+    }
+    
+    
+    
+    .welcome-box h2{
+    
+    
+    font-size:17px;
+    
+    
+    margin-bottom:12px;
+    
+    
+    }
+    
+    
+    
+    .welcome-box p{
+    
+    
+    font-size:14px;
+    
+    
+    line-height:1.8;
+    
+    
+    margin-bottom:20px;
+    
+    
+    }
+    
+    
+    
+    .summer-btn{
+    
+    
+    padding:12px;
+    
+    
+    font-size:14px;
+    
+    
+    }
+    
+    
+    
+    /* صفحه دوم */
+    
+    
+    .main-container{
+    
+    
+    gap:15px;
+    
+    
+    }
+    
+    
+    
+    .image-frame{
+    
+    
+    padding:6px;
+    
+    
+    border-radius:18px;
+    
+    
+    }
+    
+    
+    
+    .image-frame img{
+    
+    
+    border-radius:12px;
+    
+    
+    }
+    
+    
+    
+    .story-box{
+    
+    
+    padding:14px;
+    
+    
+    border-radius:18px;
+    
+    
+    }
+    
+    
+    
+    .story-box h1{
+    
+    
+    font-size:18px;
+    
+    
+    margin-bottom:15px;
+    
+    
+    }
+    
+    
+    
+    #typing-text{
+    
+    
+    font-size:14px;
+    
+    
+    line-height:2;
+    
+    
+    min-height:140px;
+    
+    
+    }
+    
+    
+    
+    .control-buttons{
+    
+    
+    display:flex;
+    
+    
+    flex-direction:column;
+    
+    
+    width:100%;
+    
+    
+    }
+    
+    
+    
+    .control-buttons button{
+    
+    
+    width:100%;
+    
+    
+    font-size:13px;
+    
+    
+    padding:10px;
+    
+    
+    }
+    
+    
+    
+    .back-btn{
+    
+    
+    padding:8px 18px;
+    
+    
+    font-size:12px;
+    
+    
+    }
+    
+    }
+    
+    
+    
+    /* ===================== */
+    /* بهینه سازی موبایل */
+    /* ===================== */
+    
+    
+    @media(max-width:330px){
+    
+    
+    
+    .welcome-box h1{
+    
+    
+    font-size:19px;
+    
+    
+    }
+    
+    
+    
+    .welcome-box h2{
+    
+    
+    font-size:15px;
+    
+    
+    }
+    
+    
+    
+    #typing-text{
+    
+    
+    font-size:13px;
+    
+    
+    }
+    
+    
+    
+    .story-box h1{
+    
+    
+    font-size:17px;
+    
+    
+    }
+    
+    
+    
+    .control-buttons button{
+    
+    
+    font-size:12px;
+    
+    
+    }
+    
+    
+    }
+    
+    
+    
+    /* جلوگیری از پرش صفحه */
+    
+    
+    img{
+    
+    
+    max-width:100%;
+    
+    
+    height:auto;
+    
+    
+    }
+    
+    
+    
+    /* کاهش حرکت برای دستگاه های ضعیف */
+    
+    
+    @media (prefers-reduced-motion:reduce){
+    
+    
+    *{
+    
+    
+    animation-duration:.01ms!important;
+    
+    
+    transition-duration:.01ms!important;
+    
+    
+    }
+    
     
     }
